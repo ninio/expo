@@ -3,6 +3,7 @@ import { GoogleMap, withGoogleMap } from 'react-google-maps';
 import { StyleSheet, View } from 'react-native';
 
 import Marker from './Marker';
+import Polyline from './Polyline';
 
 class GoogleMapInnerContainer extends React.Component<any> {
   render() {
@@ -23,6 +24,7 @@ type Props = {
 
 class MapView extends React.Component<Props> {
   static Marker = Marker;
+  static Polyline = Polyline;
 
   googleMap: GoogleMap | null = null;
 
